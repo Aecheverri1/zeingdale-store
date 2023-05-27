@@ -1,0 +1,22 @@
+:root {
+    --main-green: #034026;
+    --dark-green: #001e00;
+    --main-gray: #3e3e3e;
+}
+
+.recommended-section {
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    justify-content: space-evenly;
+}
+
+.jewelery-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.recommended-section-title {
+    text-align: start;
+    color: var(--main-green);
+}

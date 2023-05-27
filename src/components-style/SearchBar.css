@@ -1,0 +1,35 @@
+:root {
+    --main-green: #034026;
+    --dark-green: #001e00;
+    --main-gray: #3e3e3e;
+}
+
+.searchbarContainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 230px;
+    height: 25px;
+    border-radius: 12px;
+    border: solid .3px rgb(151, 151, 151);
+}
+
+input {
+    width: 180px;
+    height: 21px;
+    outline: none;
+    border: none;
+    color: var(--main-gray);
+}
+
+button {
+    width: 25px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    background-color: transparent;
+    border: none;
+    color: var(--main-green);
+}

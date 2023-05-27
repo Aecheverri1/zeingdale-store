@@ -1,0 +1,23 @@
+:root {
+    --main-green: #034026;
+    --dark-green: #001e00;
+    --main-gray: #3e3e3e;
+}
+
+.cart-container {
+    display: flex;
+    width: 60px;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.cart-container p {
+    font-size: .8rem;
+    color: var(--main-gray);
+}
+
+.cart {
+    font-size: 1.5rem;
+    color: var(--main-green);
+}

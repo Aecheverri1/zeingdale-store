@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-green: #034026;
+    --dark-green: #001e00;
+    --main-gray: #3e3e3e;
+}
+
+html {
+    font-size: 62,5%;
+}
+
+.body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+}
+
+.headerlogin-container {
+    display: flex;
+    width: 140px;
+    justify-content: space-between;
+}

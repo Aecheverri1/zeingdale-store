@@ -1,0 +1,24 @@
+:root {
+    --main-green: #034026;
+    --dark-green: #001e00;
+    --main-gray: #3e3e3e;
+}
+
+.loginbtn-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.loginbtn-container p {
+    color: var(--main-gray);
+    font-size: .8rem;
+}
+
+.user-icon {
+    color: var(--main-green);
+    font-size: 1.4rem;
+}

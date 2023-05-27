@@ -1,0 +1,32 @@
+.exclusive-offer-container {
+    display: flex;
+    width: 512px;
+    height: 390px;
+}
+
+.offer-description-container {
+    display: flex;
+    flex-direction: column;
+    width: 230px;
+}
+
+.product-offer-title {
+    font-size: 1rem;
+}
+
+.product-offer-description {
+    font-size: .7rem;
+}
+
+.offer-price-container {
+    font-size: .7rem;
+}
+
+.offer-image-container {
+    width: 200px;
+    margin: 0 auto;
+}
+
+.product-offer-image{
+    width: 190px;
+}

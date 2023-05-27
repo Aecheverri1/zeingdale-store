@@ -1,0 +1,14 @@
+.card-btn {
+    background-color: var(--main-green);
+    color: white;
+    width: 100px;
+    height: 28px;
+    border-radius: 15px;
+    font-size: .8rem;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.card-btn:hover {
+    background-color: green;
+}

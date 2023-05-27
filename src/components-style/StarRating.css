@@ -1,0 +1,19 @@
+:root {
+    --main-green: #034026;
+    --dark-green: #001e00;
+    --main-gray: #3e3e3e;
+}
+
+.star-rating-container {
+    display: flex;
+}
+
+.outstar {
+    color: rgb(170, 170, 170);
+    font-size: .7rem;
+}
+
+.filledstar {
+    color: rgb(255, 136, 0);
+    font-size: .7rem;
+}

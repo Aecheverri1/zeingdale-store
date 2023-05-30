@@ -32,3 +32,8 @@ header {
     width: 140px;
     justify-content: space-between;
 }
+
+.offer-container {
+    display: flex;
+    justify-content: space-between;
+}

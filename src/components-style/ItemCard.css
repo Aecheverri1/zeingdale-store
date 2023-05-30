@@ -10,7 +10,7 @@
     justify-content: space-evenly;
     padding-left: 8px;
     padding-right: 8px;
-    width: 230px;
+    width: 238px;
     height: 280px;
     border: solid rgb(188, 188, 188) .5px;
 }
@@ -61,6 +61,7 @@
     font-size: 1.5rem;
     font-weight: bold;
     text-align: left;
+    color: var(--dark-green);
 }
 
 .description {

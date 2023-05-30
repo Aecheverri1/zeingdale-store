@@ -1,0 +1,52 @@
+.hero-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 1024px;
+    background-image: url('../images/hero-background.png');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.hero-image-container {
+    display: flex;
+    width: 350px;
+    height: 350px;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image {
+    width: 95%;
+}
+
+.hero-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 400px;
+    height: 300px;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--main-green);
+}
+
+.explore-button {
+    background-color: var(--main-green);
+    color: white;
+    width: 150px;
+    height: 35px;
+    border-radius: 20px;
+    font-size: .8rem;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.explore-button:hover {
+    background-color: green;
+}

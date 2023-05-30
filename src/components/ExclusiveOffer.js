@@ -1,21 +1,30 @@
 import AddItemBtn from './AddItemBtn'
+import Stars from '../components/StarRating'
+import useFetch from '../custom-hooks/useFetch'
 import '../components-style/ExclusiveOffer.css'
 
-export default function ExclusiveOffer() {
+
+export default function ExclusiveOffer({url, productIndex}) {
+
+  const [fetchedData] = useFetch(url)
+
   return (
     <section >
       <article className='exclusive-offer-container'>
         <div className='offer-description-container'>
-          <h2 className='product-offer-title'>Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops</h2>
-          <div className='offer-price-container'>
-            <p>109.95</p>
-            <s>{109.95 *2}</s>
+          <div className='title-offer-container'>
+            <h2 className='product-offer-title'>{fetchedData[productIndex]?.title}</h2>
           </div>
-          <p className='product-offer-description'>Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday</p>
+          <div className='offer-price-container'>
+            <p>${fetchedData[productIndex]?.price}</p>
+            <s>${fetchedData[productIndex]?.price *2}</s>
+            <Stars  score={fetchedData[productIndex]?.rating.rate}/>
+          </div>
+          <p className='product-offer-description'>{fetchedData[productIndex]?.description}</p>
           <AddItemBtn/>
         </div>
         <div className='offer-image-container'>
-          <img className='product-offer-image' src='https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg'/>       
+          <img className='product-offer-image' src={fetchedData[productIndex]?.image} alt='product'/>       
         </div>
       </article>
 

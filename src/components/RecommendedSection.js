@@ -4,13 +4,13 @@ import '../components-style/RecommendedComponent.css'
 
 export default function RecommendedSection({baseUrl, category}) {
 
-    const [fetchedData] = useFetch(`${baseUrl}${category}`)
+    const [fetchedData] = useFetch(`${baseUrl}`)
 
     const products = {
-        product1: fetchedData[0],
-        product2: fetchedData[1],
-        product3: fetchedData[2],
-        product4: fetchedData[3],
+        product1: fetchedData[Math.floor(Math.random() * 20)],
+        product2: fetchedData[Math.floor(Math.random() * 20)],
+        product3: fetchedData[Math.floor(Math.random() * 20)],
+        product4: fetchedData[Math.floor(Math.random() * 20)],
       }
 
     return (

@@ -2,20 +2,15 @@ import Navbar from "../components/Navbar";
 import SearchBar from "../components/SearchBar";
 import Cart from "../components/Cart";
 import HomeLoginButton from "../components/HomeLoginButton";
-import HomeSlider from '../components/HomeSlider'
+import HeroImage from "../components/HeroImage";
 import RecommendedSection from "../components/RecommendedSection";
 import ExclusiveOffer from "../components/ExclusiveOffer";
-import useFetch from "../custom-hooks/useFetch";
 import '../pages-styles/HomePage.css'
 
 export default function HomePage() {
 
-  const baseUrl = 'https://fakestoreapi.com/products/category/'
-  const category = "jewelery"
-
-  
-  const [productCategories] = useFetch("https://fakestoreapi.com/products/1")
-  console.log(productCategories)
+  const baseUrl = 'https://fakestoreapi.com/products'
+  const category = "/category/jewelery"
 
   return (
     <div className="body">
@@ -29,9 +24,12 @@ export default function HomePage() {
       </div>
         </header>
         <main>
-          <HomeSlider/>
-          <RecommendedSection baseUrl={baseUrl} category={category}/>
-          <ExclusiveOffer/>
+          <HeroImage/>
+          <RecommendedSection baseUrl={baseUrl}/>
+          <div className="offer-container">
+            <ExclusiveOffer url={baseUrl} productIndex={Math.floor(Math.random() * 20)}/>
+            <ExclusiveOffer url={baseUrl} productIndex={Math.floor(Math.random() * 20)}/>
+          </div>
         </main>
     </div>
 

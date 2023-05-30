@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/zeingdale-store/static/css/main.0b7a65fb.css",
+    "main.js": "/zeingdale-store/static/js/main.a02ca336.js",
+    "static/media/delivery-hero-image.png": "/zeingdale-store/static/media/delivery-hero-image.c9b392c01e14c9ffd162.png",
+    "static/media/hero-shop-img.png": "/zeingdale-store/static/media/hero-shop-img.990bc73d5eece089d19d.png",
+    "static/media/delivery-man.png": "/zeingdale-store/static/media/delivery-man.93c136eb040ec1a19ddd.png",
+    "static/media/hero-background.png": "/zeingdale-store/static/media/hero-background.a91590103f7dc14f9a3b.png",
+    "index.html": "/zeingdale-store/index.html",
+    "main.0b7a65fb.css.map": "/zeingdale-store/static/css/main.0b7a65fb.css.map",
+    "main.a02ca336.js.map": "/zeingdale-store/static/js/main.a02ca336.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0b7a65fb.css",
+    "static/js/main.a02ca336.js"
+  ]
+}

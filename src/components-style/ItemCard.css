@@ -1,9 +1,3 @@
-:root {
-    --main-green: #034026;
-    --dark-green: #001e00;
-    --main-gray: #3e3e3e;
-}
-
 .product-card-container {
     display: flex;
     flex-direction: column;

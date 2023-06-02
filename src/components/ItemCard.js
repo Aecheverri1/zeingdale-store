@@ -3,6 +3,9 @@ import AddItemBtn from './AddItemBtn'
 import '../components-style/ItemCard.css'
 
 export default function ItemCard({cardInfo}) {
+
+  console.log(cardInfo)
+
   return (
     <article className='product-card-container'>
       <div className='card-image'>

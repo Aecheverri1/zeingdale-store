@@ -1,10 +1,12 @@
 import Stars from "./StarRating"
-import Navbar from './Navbar'
+import Header from './Header'
 import '../components-style/ItemDetail.css'
 
 export default function ItemDetail() {
   return(
-    <article className="item-detail-view">
+    <section className="item-page">
+      <Header/>
+      <article className="item-detail-view">
       <div className="item-img-container">
         <img className="item-view-img" src="https://fakestoreapi.com/img/71z3kpMAYsL._AC_UY879_.jpg"/>
       </div>
@@ -25,6 +27,7 @@ export default function ItemDetail() {
           <button className="offercode-button">Let's go</button>
         </form>
       </div>
-    </article>      
+    </article>   
+    </section>   
   )
 }

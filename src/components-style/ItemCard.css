@@ -77,3 +77,8 @@
 .card-btn:hover {
     background-color: green;
 }
+
+.link-router {
+    text-decoration: none;
+    color: black;
+}

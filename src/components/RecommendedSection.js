@@ -1,17 +1,7 @@
-import useFetch from "../custom-hooks/useFetch"
 import ItemCard from "./ItemCard"
 import '../components-style/RecommendedComponent.css'
 
-export default function RecommendedSection({baseUrl, category}) {
-
-    const [fetchedData] = useFetch(`${baseUrl}`)
-
-    const products = {
-        product1: fetchedData[Math.floor(Math.random() * 20)],
-        product2: fetchedData[Math.floor(Math.random() * 20)],
-        product3: fetchedData[Math.floor(Math.random() * 20)],
-        product4: fetchedData[Math.floor(Math.random() * 20)],
-      }
+export default function RecommendedSection({products}) {
 
     return (
         <section className="recommended-section">
